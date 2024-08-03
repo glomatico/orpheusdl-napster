@@ -101,7 +101,7 @@ class NapsterAPI:
         params = {
             'bitrate': bitrate,
             'format': codec,
-            'protocol': '',
+            'protocol': 'drm',
             'track': track_id
         }
         return self._get('streams', params)['streams'][0]['url']
